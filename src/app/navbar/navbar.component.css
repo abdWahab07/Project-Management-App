@@ -1,0 +1,84 @@
+/* Navbar background */
+.bg {
+  background-color: #ff9e43;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Navbar height */
+.nav {
+  height: 80px; /* Set a fixed height for the navbar */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.5s ease-in-out; /* Slide in animation for navbar */
+}
+
+/* Logo container */
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  margin-top: -1.2rem;
+  max-height: 200%; /* Ensure the logo fits within the navbar height */
+  width: 10rem;
+  transition: transform 0.5s ease; /* Add a transition effect */
+}
+
+/* Logo hover effect */
+.logo:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Navbar link styling */
+a {
+  color: white;
+  transition: color 0.5s ease, transform 0.3s ease;
+}
+
+/* Navbar link hover effect */
+a:hover {
+  color: #5f71d8;
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Button styling */
+button {
+  color: white;
+  background-color: #5f71d8;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: white;
+  color: #5f71d8;
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Button active effect */
+button:active {
+  transform: translateY(1px); /* Slight dip effect when button is pressed */
+}
+
+/* Keyframes for navbar slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px); /* Start off-screen above */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

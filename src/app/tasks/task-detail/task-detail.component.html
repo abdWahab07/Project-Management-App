@@ -1,0 +1,24 @@
+<div *ngFor="let task of tasks; let i = index" class="accordion" id="accordionExample">
+  <div class="accordion-item" *ngIf="task.status === 'pending'">
+    <h2 class="accordion-header" id="heading{{i}}">
+      <button class="accordion-button" type="button" (click)="toggle(i)" [attr.aria-expanded]="activeId === i" [attr.aria-controls]="'collapse'+i">
+        {{ task.taskName }}
+      </button>
+    </h2>
+    <div [id]="'collapse'+i" class="accordion-collapse collapse" [class.show]="activeId === i" [attr.aria-labelledby]="'heading'+i" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>{{ task.projectName }}</strong>
+        <p class="card-text">Start Time: {{ task.startTime | date: 'short' }}</p>
+        <p class="card-text">End Time: {{ task.endTime | date: 'short' }}</p>
+        <p class="card-text">Details: {{ task.taskDetails }}</p>
+        <div class="hstack">
+          <button class="btn btn-primary mx-2" (click)="updateTask(task)">UPDATE</button>
+          <button class="btn btn-success mx-2" (click)="updateStatusToComplete(task.taskId)">COMPLETED</button>
+          <button class="btn btn-danger mx-2" (click)="deleteTask(task.taskId)">DELETE</button>
+        </div>
+        <!-- Display message if present -->
+        <div *ngIf="status" class="alert alert-success">{{ message }}</div>
+      </div>
+    </div>
+  </div>
+</div>

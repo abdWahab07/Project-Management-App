@@ -1,0 +1,20 @@
+.bg {
+  background: url('../../../assets/loginPageBg.png') no-repeat center center fixed;
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 0 50px rgba(229, 154, 72, 1);
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #5f71d8;
+  color: white;
+}
+
+.card:hover {
+  box-shadow: 30px 30px 90px rgba(75, 112, 245, 0.9), 30px 30px 90px rgba(229, 154, 72, 0.9);
+  background-color: #ff9e43;
+}

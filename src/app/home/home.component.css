@@ -1,0 +1,76 @@
+/* Added animations for the home container */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.home {
+  background-image: url("../../assets/homePageBg.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5rem;
+  animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+h1 {
+  margin-top: -7rem;
+  margin-left: -3rem;
+  width: 50%;
+  font-size: 5rem;
+  color: #ff9e43;
+  transition: transform 0.5s ease;
+  animation: fadeIn 1.5s ease-in-out; /* Fade in animation with delay */
+}
+
+h1:hover {
+  transform: translateY(-10px); /* Subtle lift effect on hover */
+}
+
+/* Adding a button pulse effect */
+button {
+  margin-top: 1.5rem;
+  color: white;
+  background-color: #ff9e43;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem; /* Increased font size for better readability */
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 2; /* Positioned above the overlay */
+  animation: buttonPulse 2s infinite; /* Pulse animation */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: black;
+  color: #ff9e43;
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+/* Button active effect */
+button:active {
+  transform: translateY(2px); /* Subtle dip effect when button is pressed */
+}

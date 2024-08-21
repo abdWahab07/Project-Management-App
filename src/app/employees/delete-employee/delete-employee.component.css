@@ -1,0 +1,41 @@
+button {
+  margin-top: 1.5rem;
+  color: white;
+  background-color: #ff9e43;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: #ff9e43;
+}
+
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bg {
+  background: url('../../../assets/loginPageBg.png') no-repeat center center fixed;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  color: white;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(229, 154, 72, 1);
+  background: linear-gradient(180deg, #4B70F5, #e59a48, #4B70F5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover{
+  box-shadow: 0 0 40px rgba(75, 112, 245, 0.9), 0 0 40px rgba(229, 154, 72, 0.9);
+}

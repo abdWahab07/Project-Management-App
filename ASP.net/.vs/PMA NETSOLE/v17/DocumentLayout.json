@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14D61758-7D1B-46F5-9592-0CD5954EEF84}|Services\\Services.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\services\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D61758-7D1B-46F5-9592-0CD5954EEF84}|Services\\Services.csproj|solutionrelative:services\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\pma netsole\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|solutionrelative:pma netsole\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\pma netsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|solutionrelative:pma netsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D61758-7D1B-46F5-9592-0CD5954EEF84}|Services\\Services.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14D61758-7D1B-46F5-9592-0CD5954EEF84}|Services\\Services.csproj|solutionrelative:services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E137326-8F36-40A8-9611-19354A324662}|Interfaces\\Interfaces.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\interfaces\\.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E137326-8F36-40A8-9611-19354A324662}|Interfaces\\Interfaces.csproj|solutionrelative:interfaces\\.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E137326-8F36-40A8-9611-19354A324662}|Interfaces\\Interfaces.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\interfaces\\interfaces.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4E137326-8F36-40A8-9611-19354A324662}|Interfaces\\Interfaces.csproj|solutionrelative:interfaces\\interfaces.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\pma netsole\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|solutionrelative:pma netsole\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\pma netsole\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|solutionrelative:pma netsole\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\pma netsole\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{77420B2D-2F47-4BFA-AC76-AFA164670887}|PMA NETSOLE\\PMA NETSOLE.csproj|solutionrelative:pma netsole\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9844A604-0D74-4DB9-8306-4A5974EB6623}|Models\\Models.csproj|c:\\users\\hp\\source\\repos\\pma netsole\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9844A604-0D74-4DB9-8306-4A5974EB6623}|Models\\Models.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "PMA NETSOLE\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "PMA NETSOLE\\Controllers\\EmployeesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T07:35:23.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Services",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "Services\\Services.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Services\\Services.csproj",
+              "RelativeToolTip": "Services\\Services.csproj",
+              "ViewState": "AQIAAA8AAABgZYH0qdMiwA0AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-21T07:09:57.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Interfaces",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Interfaces\\Interfaces.csproj",
+              "RelativeDocumentMoniker": "Interfaces\\Interfaces.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Interfaces\\Interfaces.csproj",
+              "RelativeToolTip": "Interfaces\\Interfaces.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-21T07:11:46.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Interfaces\\.cs",
+              "RelativeDocumentMoniker": "Interfaces\\.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Interfaces\\.cs",
+              "RelativeToolTip": "Interfaces\\.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T07:04:06.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoggingService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Services\\LoggingService.cs",
+              "RelativeDocumentMoniker": "Services\\LoggingService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Services\\LoggingService.cs",
+              "RelativeToolTip": "Services\\LoggingService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T06:50:39.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\Program.cs",
+              "RelativeDocumentMoniker": "PMA NETSOLE\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\Program.cs",
+              "RelativeToolTip": "PMA NETSOLE\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T06:51:02.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectsController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\Controllers\\ProjectsController.cs",
+              "RelativeDocumentMoniker": "PMA NETSOLE\\Controllers\\ProjectsController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\Controllers\\ProjectsController.cs",
+              "RelativeToolTip": "PMA NETSOLE\\Controllers\\ProjectsController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T06:52:02.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\appsettings.json",
+              "RelativeDocumentMoniker": "PMA NETSOLE\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\appsettings.json",
+              "RelativeToolTip": "PMA NETSOLE\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-21T06:52:54.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "PMA NETSOLE\\Controllers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\PMA NETSOLE\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "PMA NETSOLE\\Controllers\\TasksController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T06:52:01.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Models\\Project.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\PMA NETSOLE\\Models\\Project.cs",
+              "RelativeToolTip": "Models\\Project.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T06:50:53.879Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

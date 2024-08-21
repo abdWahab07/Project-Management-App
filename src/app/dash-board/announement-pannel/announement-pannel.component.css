@@ -1,0 +1,93 @@
+.bg {
+  background: url('../../../assets/loginPageBg.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.announcement-management-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.announcement-management-container h2 {
+  text-align: center;
+  color: #343a40; /* Dark grey for headings */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.announcement-management-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.announcement-management-container label {
+  font-weight: bold;
+  color: #495057; /* Medium grey for labels */
+}
+
+.announcement-management-container input[type="text"],
+.announcement-management-container input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ced4da; /* Light grey border */
+  border-radius: 4px;
+  font-size: 16px;
+  color: #495057; /* Medium grey text */
+}
+
+.announcement-management-container input[type="text"]:focus,
+.announcement-management-container input[type="date"]:focus {
+  border-color: #80bdff; /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+}
+
+.announcement-management-container button {
+  padding: 10px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.announcement-management-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.announcement-list {
+  margin-top: 20px;
+}
+
+.announcement-item {
+  background-color: #ffffff; /* White background for announcements */
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef; /* Light grey border */
+  margin-bottom: 15px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.announcement-item p {
+  margin: 0 0 10px;
+  color: #343a40; /* Dark grey text */
+  font-size: 16px;
+}
+
+.announcement-item button {
+  background-color: #dc3545; /* Bootstrap danger color */
+  font-size: 14px;
+}
+
+.announcement-item button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}

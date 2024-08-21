@@ -1,0 +1,94 @@
+/* Fading in the whole card-container on page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bg {
+  background: url("../../../assets/loginPageBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  /* Center the card container */
+  height: 100vh; /* Take full height of the viewport */
+  animation: fadeIn 1s ease-in-out; /* Fade in on page load */
+}
+
+.bg-card {
+  background: url("../../../assets/loginCard.png") no-repeat center center;
+  background-size: cover;
+  width: 30rem;
+  max-width: 400px;
+  height: 30rem;
+  box-shadow: 0 0 50px rgba(75, 112, 245, 1);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.login-card {
+  background-color: #e59a48;
+  width: 30rem;
+  max-width: 400px;
+  box-shadow: 0 0 50px rgba(229, 154, 72, 1);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  height: 30rem;
+}
+
+/* Adding a scale effect on hover */
+.bg-card:hover,
+.login-card:hover {
+  box-shadow: 0 0 40px rgba(75, 112, 245, 0.9), 0 0 40px rgba(229, 154, 72, 0.9);
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center; /* Center-align the heading */
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border-color:#e59a48;
+  width: calc(100% - 2rem); /* Full-width with padding */
+  margin-bottom: 1rem; /* Add some space between inputs */
+}
+
+button {
+  margin-top: 1rem;
+  color: #ff9e43;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease-in-out;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Adding a slight push effect on hover */
+button:hover {
+  background-color: #ff9e43;
+  color: black;
+  transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.alert {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #ff4d4d; /* Red background for alert */
+  color: white; /* White text color */
+  margin-top: 1rem; /* Space above alert */
+  text-align: center; /* Center-align the text */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+}

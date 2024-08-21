@@ -1,0 +1,186 @@
+2024-08-21 00:43:17.625 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/tasks - null null
+2024-08-21 00:43:17.632 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:17.633 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.TasksController.GetTasks (PMA NETSOLE)'
+2024-08-21 00:43:17.634 -07:00 [INF] Route matched with {action = "GetTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.Models.Dto.TaskDto]]] GetTasks() on controller testing_mode.Controllers.TasksController (PMA NETSOLE).
+2024-08-21 00:43:17.786 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t."TaskId", t."ProjectId", t."TaskName", t."AssignedEmployeeName", t."StartDate", t."EndDate", t."TaskDetails", t."PercentageCompleted", t."Status"
+FROM "Tasks" AS t
+2024-08-21 00:43:17.790 -07:00 [INF] Successfully retrieved 4 tasks.
+2024-08-21 00:43:17.791 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[testing_mode.Models.Dto.TaskDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-21 00:43:17.793 -07:00 [INF] Executed action testing_mode.Controllers.TasksController.GetTasks (PMA NETSOLE) in 155.0041ms
+2024-08-21 00:43:17.794 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.TasksController.GetTasks (PMA NETSOLE)'
+2024-08-21 00:43:17.795 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/tasks - 200 null application/json; charset=utf-8 170.1769ms
+2024-08-21 00:43:19.892 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5283/api/users/verify-token - null null
+2024-08-21 00:43:19.896 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:19.896 -07:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5283/api/users/verify-token - 204 null null 4.3236ms
+2024-08-21 00:43:19.898 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/users/verify-token - null null
+2024-08-21 00:43:19.900 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:19.901 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE)'
+2024-08-21 00:43:19.902 -07:00 [INF] Route matched with {action = "VerifyToken", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult VerifyToken() on controller testing_mode.Controllers.UsersController (PMA NETSOLE).
+2024-08-21 00:43:19.904 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-08-21 00:43:19.904 -07:00 [INF] Executed action testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE) in 1.0038ms
+2024-08-21 00:43:19.905 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE)'
+2024-08-21 00:43:19.906 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/users/verify-token - 200 null application/json; charset=utf-8 7.5635ms
+2024-08-21 00:43:20.000 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/users/verify-token - null null
+2024-08-21 00:43:20.115 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:20.115 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE)'
+2024-08-21 00:43:20.119 -07:00 [INF] Route matched with {action = "VerifyToken", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult VerifyToken() on controller testing_mode.Controllers.UsersController (PMA NETSOLE).
+2024-08-21 00:43:20.123 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-08-21 00:43:20.123 -07:00 [INF] Executed action testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE) in 1.0867ms
+2024-08-21 00:43:20.126 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE)'
+2024-08-21 00:43:20.127 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/users/verify-token - 200 null application/json; charset=utf-8 126.7801ms
+2024-08-21 00:43:20.164 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/projects - null null
+2024-08-21 00:43:20.166 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:20.167 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:20.168 -07:00 [INF] Route matched with {action = "GetProjects", controller = "Projects"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.Models.Dto.ProjectDto]]] GetProjects() on controller testing_mode.Controllers.ProjectsController (PMA NETSOLE).
+2024-08-21 00:43:20.169 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/announcements - null null
+2024-08-21 00:43:20.172 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."ProjectId", p."Name", p."CompanyName", p."StartDate", p."EndDate", p."ManagerName", p."DepartmentName", p."TaskCounts"
+FROM "Projects" AS p
+2024-08-21 00:43:20.172 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:20.174 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[testing_mode.Models.Dto.ProjectDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-21 00:43:20.174 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.AnnouncementsController.GetAnnouncements (PMA NETSOLE)'
+2024-08-21 00:43:20.175 -07:00 [INF] Executed action testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE) in 4.6442ms
+2024-08-21 00:43:20.177 -07:00 [INF] Route matched with {action = "GetAnnouncements", controller = "Announcements"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.Models.Announcement]]] GetAnnouncements(Int32, Int32) on controller testing_mode.Controllers.AnnouncementsController (PMA NETSOLE).
+2024-08-21 00:43:20.178 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/projects - null null
+2024-08-21 00:43:20.178 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:20.181 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:20.181 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Announcements" AS a
+2024-08-21 00:43:20.181 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/Employees - null null
+2024-08-21 00:43:20.182 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/projects - 200 null application/json; charset=utf-8 17.757ms
+2024-08-21 00:43:20.183 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:20.185 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AnnouncementText", a."EndDate", a."StartDate"
+FROM "Announcements" AS a
+LIMIT @__p_1 OFFSET @__p_0
+2024-08-21 00:43:20.186 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:20.189 -07:00 [INF] Route matched with {action = "GetProjects", controller = "Projects"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.Models.Dto.ProjectDto]]] GetProjects() on controller testing_mode.Controllers.ProjectsController (PMA NETSOLE).
+2024-08-21 00:43:20.190 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`4[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[testing_mode.Models.Announcement, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-08-21 00:43:20.191 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.EmployeesController.GetEmployees (PMA NETSOLE)'
+2024-08-21 00:43:20.193 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."ProjectId", p."Name", p."CompanyName", p."StartDate", p."EndDate", p."ManagerName", p."DepartmentName", p."TaskCounts"
+FROM "Projects" AS p
+2024-08-21 00:43:20.193 -07:00 [INF] Executed action testing_mode.Controllers.AnnouncementsController.GetAnnouncements (PMA NETSOLE) in 14.4307ms
+2024-08-21 00:43:20.194 -07:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.DTOs.EmployeeWithTaskInfoDto]]] GetEmployees() on controller testing_mode.Controllers.EmployeesController (PMA NETSOLE).
+2024-08-21 00:43:20.196 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[testing_mode.Models.Dto.ProjectDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-21 00:43:20.196 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.AnnouncementsController.GetAnnouncements (PMA NETSOLE)'
+2024-08-21 00:43:20.200 -07:00 [INF] Executed action testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE) in 7.6543ms
+2024-08-21 00:43:20.201 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/announcements - 200 null application/json; charset=utf-8 31.3939ms
+2024-08-21 00:43:20.202 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EmployeeId", e."Name", e."Designation", e."Experience", e."Description", e."PastDesignation", (
+    SELECT count(*)::int
+    FROM "Tasks" AS t
+    WHERE t."AssignedEmployeeName" = e."Name") AS "TotalTasks", (
+    SELECT count(*)::int
+    FROM "Tasks" AS t0
+    WHERE t0."AssignedEmployeeName" = e."Name" AND t0."Status" = 'pending') AS "PendingTasks", (
+    SELECT count(*)::int
+    FROM "Tasks" AS t1
+    WHERE t1."AssignedEmployeeName" = e."Name" AND t1."Status" = 'completed') AS "CompletedTasks"
+FROM "Employees" AS e
+2024-08-21 00:43:20.202 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:20.204 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/projects - null null
+2024-08-21 00:43:20.206 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[testing_mode.DTOs.EmployeeWithTaskInfoDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-21 00:43:20.207 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/projects - 200 null application/json; charset=utf-8 29.1922ms
+2024-08-21 00:43:20.209 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:20.210 -07:00 [INF] Executed action testing_mode.Controllers.EmployeesController.GetEmployees (PMA NETSOLE) in 11.8435ms
+2024-08-21 00:43:20.214 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:20.216 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.EmployeesController.GetEmployees (PMA NETSOLE)'
+2024-08-21 00:43:20.217 -07:00 [INF] Route matched with {action = "GetProjects", controller = "Projects"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.Models.Dto.ProjectDto]]] GetProjects() on controller testing_mode.Controllers.ProjectsController (PMA NETSOLE).
+2024-08-21 00:43:20.218 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/Employees - 200 null application/json; charset=utf-8 36.5737ms
+2024-08-21 00:43:20.221 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."ProjectId", p."Name", p."CompanyName", p."StartDate", p."EndDate", p."ManagerName", p."DepartmentName", p."TaskCounts"
+FROM "Projects" AS p
+2024-08-21 00:43:20.224 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[testing_mode.Models.Dto.ProjectDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-21 00:43:20.225 -07:00 [INF] Executed action testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE) in 5.4841ms
+2024-08-21 00:43:20.226 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:20.227 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/projects - 200 null application/json; charset=utf-8 23.3398ms
+2024-08-21 00:43:39.240 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5283/api/users/verify-token - null null
+2024-08-21 00:43:39.246 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:39.247 -07:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5283/api/users/verify-token - 204 null null 7.6143ms
+2024-08-21 00:43:39.251 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/users/verify-token - null null
+2024-08-21 00:43:39.254 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:39.255 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE)'
+2024-08-21 00:43:39.256 -07:00 [INF] Route matched with {action = "VerifyToken", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult VerifyToken() on controller testing_mode.Controllers.UsersController (PMA NETSOLE).
+2024-08-21 00:43:39.258 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-08-21 00:43:39.259 -07:00 [INF] Executed action testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE) in 1.2298ms
+2024-08-21 00:43:39.260 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE)'
+2024-08-21 00:43:39.260 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/users/verify-token - 200 null application/json; charset=utf-8 9.3128ms
+2024-08-21 00:43:39.268 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/users/verify-token - null null
+2024-08-21 00:43:39.270 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:39.271 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE)'
+2024-08-21 00:43:39.272 -07:00 [INF] Route matched with {action = "VerifyToken", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult VerifyToken() on controller testing_mode.Controllers.UsersController (PMA NETSOLE).
+2024-08-21 00:43:39.273 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-08-21 00:43:39.274 -07:00 [INF] Executed action testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE) in 1.13ms
+2024-08-21 00:43:39.276 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.UsersController.VerifyToken (PMA NETSOLE)'
+2024-08-21 00:43:39.276 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/users/verify-token - 200 null application/json; charset=utf-8 8.5178ms
+2024-08-21 00:43:39.297 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/projects - null null
+2024-08-21 00:43:39.300 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:39.301 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:39.301 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/announcements - null null
+2024-08-21 00:43:39.302 -07:00 [INF] Route matched with {action = "GetProjects", controller = "Projects"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.Models.Dto.ProjectDto]]] GetProjects() on controller testing_mode.Controllers.ProjectsController (PMA NETSOLE).
+2024-08-21 00:43:39.304 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:39.306 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.AnnouncementsController.GetAnnouncements (PMA NETSOLE)'
+2024-08-21 00:43:39.306 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."ProjectId", p."Name", p."CompanyName", p."StartDate", p."EndDate", p."ManagerName", p."DepartmentName", p."TaskCounts"
+FROM "Projects" AS p
+2024-08-21 00:43:39.306 -07:00 [INF] Route matched with {action = "GetAnnouncements", controller = "Announcements"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.Models.Announcement]]] GetAnnouncements(Int32, Int32) on controller testing_mode.Controllers.AnnouncementsController (PMA NETSOLE).
+2024-08-21 00:43:39.308 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[testing_mode.Models.Dto.ProjectDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-21 00:43:39.310 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/Employees - null null
+2024-08-21 00:43:39.310 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Announcements" AS a
+2024-08-21 00:43:39.311 -07:00 [INF] Executed action testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE) in 5.4406ms
+2024-08-21 00:43:39.312 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/projects - null null
+2024-08-21 00:43:39.313 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:39.315 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AnnouncementText", a."EndDate", a."StartDate"
+FROM "Announcements" AS a
+LIMIT @__p_1 OFFSET @__p_0
+2024-08-21 00:43:39.315 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:39.317 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:39.317 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.EmployeesController.GetEmployees (PMA NETSOLE)'
+2024-08-21 00:43:39.319 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`4[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[testing_mode.Models.Announcement, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-08-21 00:43:39.320 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/projects - 200 null application/json; charset=utf-8 22.6553ms
+2024-08-21 00:43:39.320 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:39.321 -07:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.DTOs.EmployeeWithTaskInfoDto]]] GetEmployees() on controller testing_mode.Controllers.EmployeesController (PMA NETSOLE).
+2024-08-21 00:43:39.322 -07:00 [INF] Executed action testing_mode.Controllers.AnnouncementsController.GetAnnouncements (PMA NETSOLE) in 12.9506ms
+2024-08-21 00:43:39.325 -07:00 [INF] Route matched with {action = "GetProjects", controller = "Projects"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.Models.Dto.ProjectDto]]] GetProjects() on controller testing_mode.Controllers.ProjectsController (PMA NETSOLE).
+2024-08-21 00:43:39.328 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.AnnouncementsController.GetAnnouncements (PMA NETSOLE)'
+2024-08-21 00:43:39.328 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EmployeeId", e."Name", e."Designation", e."Experience", e."Description", e."PastDesignation", (
+    SELECT count(*)::int
+    FROM "Tasks" AS t
+    WHERE t."AssignedEmployeeName" = e."Name") AS "TotalTasks", (
+    SELECT count(*)::int
+    FROM "Tasks" AS t0
+    WHERE t0."AssignedEmployeeName" = e."Name" AND t0."Status" = 'pending') AS "PendingTasks", (
+    SELECT count(*)::int
+    FROM "Tasks" AS t1
+    WHERE t1."AssignedEmployeeName" = e."Name" AND t1."Status" = 'completed') AS "CompletedTasks"
+FROM "Employees" AS e
+2024-08-21 00:43:39.330 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/announcements - 200 null application/json; charset=utf-8 28.6709ms
+2024-08-21 00:43:39.331 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[testing_mode.DTOs.EmployeeWithTaskInfoDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-21 00:43:39.334 -07:00 [INF] Executed action testing_mode.Controllers.EmployeesController.GetEmployees (PMA NETSOLE) in 7.5664ms
+2024-08-21 00:43:39.336 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.EmployeesController.GetEmployees (PMA NETSOLE)'
+2024-08-21 00:43:39.337 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/Employees - 200 null application/json; charset=utf-8 27.6411ms
+2024-08-21 00:43:39.485 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."ProjectId", p."Name", p."CompanyName", p."StartDate", p."EndDate", p."ManagerName", p."DepartmentName", p."TaskCounts"
+FROM "Projects" AS p
+2024-08-21 00:43:39.489 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[testing_mode.Models.Dto.ProjectDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-21 00:43:39.490 -07:00 [INF] Executed action testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE) in 161.6315ms
+2024-08-21 00:43:39.492 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:39.492 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5283/api/projects - null null
+2024-08-21 00:43:39.493 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/projects - 200 null application/json; charset=utf-8 180.8617ms
+2024-08-21 00:43:39.495 -07:00 [INF] CORS policy execution successful.
+2024-08-21 00:43:39.498 -07:00 [INF] Executing endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:39.499 -07:00 [INF] Route matched with {action = "GetProjects", controller = "Projects"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[testing_mode.Models.Dto.ProjectDto]]] GetProjects() on controller testing_mode.Controllers.ProjectsController (PMA NETSOLE).
+2024-08-21 00:43:39.501 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."ProjectId", p."Name", p."CompanyName", p."StartDate", p."EndDate", p."ManagerName", p."DepartmentName", p."TaskCounts"
+FROM "Projects" AS p
+2024-08-21 00:43:39.504 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[testing_mode.Models.Dto.ProjectDto, DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-21 00:43:39.505 -07:00 [INF] Executed action testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE) in 4.9319ms
+2024-08-21 00:43:39.506 -07:00 [INF] Executed endpoint 'testing_mode.Controllers.ProjectsController.GetProjects (PMA NETSOLE)'
+2024-08-21 00:43:39.507 -07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5283/api/projects - 200 null application/json; charset=utf-8 15.0659ms

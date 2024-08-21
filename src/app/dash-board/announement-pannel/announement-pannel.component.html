@@ -1,0 +1,32 @@
+<div class="bg">
+  <div class="announcement-management-container">
+    <h2>Manage Announcements</h2>
+
+    <form (ngSubmit)="addAnnouncement()" #announcementForm="ngForm">
+      <div>
+        <label for="announcementText">Announcement:</label>
+        <input id="announcementText" name="announcementText" [(ngModel)]="newAnnouncement.announcementText" required>
+      </div>
+      <div>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" [(ngModel)]="newAnnouncement.startDate" required>
+      </div>
+      <div>
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" [(ngModel)]="newAnnouncement.endDate" required>
+      </div>
+      <button type="submit" [disabled]="!announcementForm.form.valid">Add Announcement</button>
+    </form>
+
+    <button (click)="deleteExpired()">Delete Expired Announcements</button>
+
+    <div class="announcement-list">
+      <div *ngFor="let announcement of announcements" class="announcement-item">
+        <p><strong>Announcement:</strong> {{ announcement.announcementText }}</p>
+        <p><strong>Start Date:</strong> {{ announcement.startDate | date }}</p>
+        <p><strong>End Date:</strong> {{ announcement.endDate | date }}</p>
+        <button *ngIf="announcement.id !== undefined" (click)="deleteAnnouncement(announcement.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

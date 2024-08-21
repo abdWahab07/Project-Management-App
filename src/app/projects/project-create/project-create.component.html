@@ -1,0 +1,44 @@
+<div class="bg">
+  <div class="container mt-5 card">
+    <h2 class="text-center mt-3 monteserat-bolder text-uppercase">Create Project</h2>
+    <form [formGroup]="projectForm" (ngSubmit)="onSubmit()" class="monteserat-light">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" formControlName="name">
+      </div>
+      <div class="form-group">
+        <label for="companyName">Company Name</label>
+        <input type="text" id="companyName" class="form-control" formControlName="companyName">
+      </div>
+      <div class="form-group">
+        <label for="startDate">Start Date</label>
+        <input type="date" id="startDate" class="form-control" formControlName="startDate">
+      </div>
+      <div class="form-group">
+        <label for="endDate">End Date</label>
+        <input type="date" id="endDate" class="form-control" formControlName="endDate">
+      </div>
+      <div class="form-group">
+        <label for="managerName">Manager Name</label>
+        <input type="text" id="managerName" class="form-control" formControlName="managerName">
+      </div>
+      <div class="form-group">
+        <label for="departmentName">Department Name</label>
+        <input type="text" id="departmentName" class="form-control" formControlName="departmentName">
+      </div>
+      <button type="submit" class="mt-3 mb-3 button" [disabled]="projectForm.invalid">Create Project</button>
+
+      <!-- Bootstrap Alerts -->
+      <div *ngIf="submited === true" class="alert alert-success" role="alert">
+        Project created successfully
+      </div>
+      <div *ngIf="submited === false" class="alert alert-danger" role="alert">
+        There was an error creating the project
+      </div>
+    </form>
+
+    <div class="mb-3">
+      <a class="text-white" href="/createTask">Click here to create tasks for your projects</a>
+    </div>
+  </div>
+</div>

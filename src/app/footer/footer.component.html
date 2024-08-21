@@ -1,0 +1,37 @@
+<div class="footer d-flex justify-content-between p-5 w-100">
+    <div>
+      <p class="monteserat-bold text-uppercase fs-3">quick links</p>
+      <div class="vstack">
+        <div class="vstack">
+          <a
+            *ngFor="let nav of navbar"
+            [routerLink]="nav.route"
+            class="p-2 monteserat-light text-uppercase text-decoration-none text-white"
+          >{{ nav.label }}</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="monteserat-bold text-uppercase fs-3">about us</p>
+      <div class="vstack">
+        <a
+          *ngFor="let link of aboutUs"
+          class="p-2 text-uppercase monteserat-light text-decoration-none text-white"
+          href=""
+        >
+          {{ link }}
+        </a>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-uppercase monteserat-bold w-50 fs-3">
+        sign up to receive our newsletter
+      </h3>
+      <input class="footerInput" type="email">
+      <div class="socialMediaLinks hstack text-center mt-5 text-white align-items-center">
+        <p class="text-white text-center mb-0">follow us on</p>
+        <a href="" class="mx-3"><fa-icon [icon]="faEnvelope" size="2xl"></fa-icon></a>
+        <a href="" class="mx-3"><fa-icon [icon]="faLinkedin" size="2xl"></fa-icon></a>
+      </div>
+    </div>
+  </div>

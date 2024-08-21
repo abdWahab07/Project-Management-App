@@ -1,0 +1,54 @@
+<div class="bg d-flex justify-content-center align-items-center">
+  <!-- Skeleton loader while loading -->
+  <div *ngIf="loading" class="skeleton-loader">
+    <div class="card" aria-hidden="true">
+    <div class="card-body">
+      <h5 class="card-title placeholder-glow">
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+    </div>
+  </div>
+</div>
+
+  <!-- Main content when not loading -->
+  <div *ngIf="!loading" class="d-flex justify-content-center align-items-center">
+    <div class="monteserat-light card border-warning mb-3 m-2" style="max-width: 18rem">
+      <div class="card-header text-uppercase">team management</div>
+      <div class="card-body">
+        <h5 class="card-title">Add a new resource</h5>
+        <p class="card-text">Add new employee in the team list.</p>
+        <button class="btn btn-success">
+          <a class="text-decoration-none text-white" href="employees/create-employee">ADD</a>
+        </button>
+      </div>
+    </div>
+    <div class="monteserat-light card border-warning mb-3 m-2" style="max-width: 18rem">
+      <div class="card-header text-uppercase">team management</div>
+      <div class="card-body">
+        <h5 class="card-title">Team list</h5>
+        <p class="card-text">Shows the list of team employees.</p>
+        <button class="btn btn-primary">
+          <a class="text-decoration-none text-white" href="employees/employees-list">SHOW</a>
+        </button>
+      </div>
+    </div>
+    <div class="monteserat-light card border-warning mb-3 m-2" style="max-width: 18rem">
+      <div class="card-header text-uppercase">team management</div>
+      <div class="card-body">
+        <h5 class="card-title">Delete employee</h5>
+        <p class="card-text">Deletes the employee from this list.</p>
+        <button class="btn btn-danger">
+          <a class="text-decoration-none text-white" href="employees/delete-employee">DELETE</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

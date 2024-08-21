@@ -1,0 +1,14 @@
+.accordion .accordion-collapse {
+  transition: max-height 1.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+}
+
+.accordion .accordion-collapse.show {
+  opacity: 1;
+  max-height: 1000px; /* Adjust as necessary */
+}
+
+.accordion .accordion-collapse:not(.show) {
+  opacity: 0;
+  max-height: 0;
+}

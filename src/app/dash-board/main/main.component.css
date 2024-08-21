@@ -1,0 +1,27 @@
+/* Heading styles */
+h1 {
+  color: #5f71d8;
+  transition: color 0.5s ease, transform 0.3s ease;
+}
+
+/* Heading hover effect */
+h1:hover {
+  color: #3a4aab; /* Slightly darker shade on hover */
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+/* Bar chart styles */
+.bar {
+  fill: steelblue;
+  transition: fill 0.3s ease; /* Smooth transition for fill color */
+}
+
+/* Bar hover effect */
+.bar:hover {
+  fill: orange;
+}
+
+/* Axis path styles */
+.x-axis path, .y-axis path {
+  display: none;
+}

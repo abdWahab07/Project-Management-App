@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import url('../node_modules/angular-calendar/css/angular-calendar.css');
+
+@font-face {
+  font-family: monteserat;
+  src: url("../public/Montserrat-VariableFont_wght.ttf");
+}
+
+.monteserat-bold {
+  font-weight: 700;
+  font-family: monteserat;
+}
+.monteserat-light {
+  font-weight: 400;
+  font-family: monteserat;
+}
+.monteserat-bolder {
+  font-weight: 900;
+  font-family: monteserat;
+}
+
+@font-face {
+  font-family: "play-fair";
+  src: url(../public/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+.playFair-light {
+  font-family: "play-fair";
+  font-weight: 400;
+}
+.playFair-lighter {
+  font-family: "play-fair";
+  font-weight: 300;
+}
+.playFair-bold {
+  font-family: "play-fair";
+  font-weight: 700;
+}
+.playFair-bolder {
+  font-family: "play-fair";
+  font-weight: 900;
+}

@@ -1,0 +1,20 @@
+<div class="bg">
+  <div class="card container mt-4">
+    <h2 class="monteserat-bold text-uppercase text-center mt-3">Delete Employee</h2>
+    <form (ngSubmit)="onDelete()">
+      <div class="monteserat-light mb-3">
+        <label for="employeeId" class="form-label">Employee ID</label>
+        <input
+          type="number"
+          class="form-control"
+          id="employeeId"
+          [(ngModel)]="employeeId"
+          name="employeeId"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-danger mb-4">Delete</button>
+    </form>
+    <div *ngIf="message" class="alert alert-info mt-3">{{ message }}</div>
+  </div>
+</div>

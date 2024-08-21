@@ -1,0 +1,121 @@
+/* Footer styling */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+  background-color: #000; /* Dark background color */
+  position: relative;
+  overflow: hidden; /* Ensure no overflow for animations */
+}
+
+/* Footer section */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 158, 67, 0.2); /* Light overlay for contrast */
+  z-index: 1; /* Positioned behind content */
+  transition: opacity 0.5s ease;
+}
+
+/* VStack styling for vertical alignment */
+.vstack {
+  display: flex;
+  flex-direction: column;
+  z-index: 2; /* Positioned above the overlay */
+}
+
+/* Hstack styling for horizontal alignment */
+.hstack {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Footer input styling */
+.footerInput {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: 1px solid #e89d4b; /* Add border color for visual appeal */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Footer input focus effect */
+.footerInput:focus {
+  border-color: #ff9e43; /* Highlight border color on focus */
+  box-shadow: 0 0 5px rgba(255, 158, 67, 0.5); /* Subtle shadow effect */
+  outline: none; /* Remove default outline */
+}
+
+/* Social media links */
+.socialMediaLinks {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  z-index: 2; /* Positioned above the overlay */
+  transition: transform 0.3s ease;
+}
+
+/* Social media icons hover effect */
+.socialMediaLinks a {
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialMediaLinks a:hover {
+  color: #e89d4b; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Text styling */
+p {
+  color: #e89d4b;
+  transition: color 0.3s ease;
+}
+
+h3 {
+  color: #e89d4b;
+  transition: color 0.3s ease;
+}
+
+/* Footer heading styling */
+.footer h3, .footer p {
+  position: relative;
+  z-index: 2; /* Positioned above the overlay */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for headings and paragraphs */
+.footer h3:hover, .footer p:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Text alignment and uppercase styling */
+.text-center {
+  text-align: center;
+}
+
+.monteserat-bold {
+  font-weight: bold;
+}
+
+.monteserat-light {
+  font-weight: 300;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: white;
+}
+
+.fs-3 {
+  font-size: 1.75rem;
+}

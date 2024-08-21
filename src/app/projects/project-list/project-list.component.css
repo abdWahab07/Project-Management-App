@@ -1,0 +1,82 @@
+/* Background styles */
+.bg {
+  background: url('../../../assets/loginPageBg.png') no-repeat center center fixed;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures no overflow */
+}
+
+/* Card and table styles */
+.card {
+  box-shadow: 0 0 50px rgba(229, 154, 72, 1);
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #5f71d8;
+  color: white;
+  animation: cardFadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+.card:hover {
+  box-shadow: 30px 30px 90px rgba(75, 112, 245, 0.9), 30px 30px 90px rgba(229, 154, 72, 0.9);
+  background-color: #ff9e43;
+}
+
+.table {
+  animation: tableFadeIn 1s ease-in-out;
+}
+
+/* Button animations */
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Keyframes for custom animations */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tableFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add some delay to fade-in elements */
+.animate__animated.animate__fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate__delay-1s {
+  animation-delay: 1s;
+}
+
+.animate__delay-2s {
+  animation-delay: 2s;
+}

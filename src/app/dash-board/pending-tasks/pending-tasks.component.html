@@ -1,0 +1,17 @@
+<!-- pending-tasks.component.html -->
+ <div class="bg">
+<div class="card container mt-4">
+  <h2 class="monteserat-bolder text-uppercase text-center mt-3">Pending Tasks</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let task of tasks">
+      <div class="cards  bg-warning">
+        <div class="card-body" class="monteserat-light p-4  ">
+          <h5 class="card-title"><strong>{{ task.taskName }}</strong></h5>
+          <p class="card-text">{{ task.taskDetails }}</p>
+          <p class="card-text"><small class="text-muted">Due by {{ task.endTime| date }}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

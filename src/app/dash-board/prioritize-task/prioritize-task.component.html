@@ -1,0 +1,27 @@
+<div class="bg">
+  <!-- prioritize-task.component.html -->
+   <div class="container card">
+  <h1 class="monteserat-bolder text-uppercase mt-3 text-center">Critical Tasks</h1>
+  <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="prioritizedTasks.length > 0">
+    <div *ngFor="let task of prioritizedTasks" class="card mb-3">
+      <div class="monteserat-light card-body bg-warning">
+        <h5 class="text-uppercase card-title"><strong>{{ task.taskName }}</strong></h5>
+        <p class="card-text">{{ task.taskDetails }}</p>
+        <p class="card-text">
+          <small class="text-muted"
+            >Due: {{ task.endTime | date : "short" }}</small
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="prioritizedTasks.length === 0 && !errorMessage">
+    <p>No tasks due within the next three days.</p>
+  </div>
+</div>
+</div>

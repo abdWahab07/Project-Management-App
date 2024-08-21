@@ -1,0 +1,26 @@
+h1{
+  color: #5f71d8;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: orange;
+}
+
+.x-axis path, .y-axis path {
+  display: none;
+}
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: orange;
+}
+
+.x-axis path, .y-axis path {
+  display: none;
+}

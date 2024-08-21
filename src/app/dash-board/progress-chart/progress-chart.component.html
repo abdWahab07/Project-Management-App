@@ -1,0 +1,50 @@
+<div class="bg">
+  <h1 class="text-center text-uppercase monteserat-bolder my-4">Projects Progress Chart</h1>
+  <div class="card container my-3 p-4" *ngFor="let project of projects">
+    <h3 class="monteserat-bolder">{{ project.name }}</h3>
+    <p class="monteserat-light">Deadline: {{ project.endDate | date }}</p>
+    <h4>
+      <button
+        class="btn btn-primary monteserat-bold"
+        type="button"
+        data-bs-toggle="collapse"
+        [attr.data-bs-target]="'#completedTasks' + project.projectId"
+      >
+        Completed Tasks
+      </button>
+    </h4>
+    <div [id]="'completedTasks' + project.projectId" class="collapse">
+      <div *ngFor="let task of getCompletedTasks(project.tasks)">
+        <div class="card bg-white p-3 mb-2">
+          <div class="monteserat-light text-black">
+            <h5 class="card-title">{{ task.taskName }}</h5>
+            <p class="card-text"><strong>Details:</strong>  {{ task.taskDetails }}</p>
+            <p class="card-text"><strong>Completion:</strong> {{ task.progressPercentage }}%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        [attr.data-bs-target]="'#pendingTasks' + project.projectId"
+      >
+        Pending Tasks
+      </button>
+    </h4>
+    <div [id]="'pendingTasks' + project.projectId" class="collapse">
+      <div *ngFor="let task of getPendingTasks(project.tasks)">
+        <div class="card my-4 bg-white text-dark">
+          <div class="monteserat-light card-body">
+            <h5 class="card-title">{{ task.taskName }}</h5>
+            <p class="card-text"><strong>Details:</strong>Details: {{ task.taskDetails }}</p>
+            <p class="card-text"><strong>Completion:</strong>Completion: {{ task.progressPercentage }}%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="bg">
+  <div class="container mt-4 card">
+    <h2 class="text-center monteserat-bold text-uppercase mt-3 animate__animated animate__fadeIn">Projects</h2>
+    <div *ngIf="projects?.length" class="animate__animated animate__fadeIn animate__delay-1s">
+      <table class="table table-striped">
+        <thead>
+          <tr class="monteserat-bold">
+            <th>Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody class="monteserat-light">
+          <tr *ngFor="let project of projects" class="animate__animated animate__fadeIn animate__delay-2s">
+            <td>{{ project.name }}</td>
+            <td>{{ project.startDate | date: 'shortDate' }}</td>
+            <td>{{ project.endDate | date: 'shortDate' }}</td>
+            <td>
+              <button
+                class="btn btn-primary mx-3 animate__animated animate__pulse"
+                (click)="editProject(project.projectId)"
+              >
+                Update
+              </button>
+              <button
+                class="btn btn-danger animate__animated animate__pulse"
+                (click)="deleteProject(project.projectId)"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="!projects?.length" class="animate__animated animate__fadeIn animate__delay-1s">
+      <p>No projects available.</p>
+    </div>
+    <div *ngIf="errorMessage" class="alert alert-danger animate__animated animate__fadeIn animate__delay-1s">
+      {{ errorMessage }}
+    </div>
+    <div *ngIf="successMessage" class="alert alert-success animate__animated animate__fadeIn animate__delay-1s">
+      {{ successMessage }}
+    </div>
+  </div>
+</div>
