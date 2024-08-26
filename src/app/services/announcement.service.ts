@@ -14,7 +14,7 @@ interface PaginatedAnnouncements {
   providedIn: 'root'
 })
 export class AnnouncementService {
-  private baseUrl = 'http://localhost:5283/api/announcements';
+  private baseUrl = 'http://localhost:5162/api/announcements';
 
   constructor() {}
 

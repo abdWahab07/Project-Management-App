@@ -5,7 +5,7 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class EmployeeService {
-  private apiUrl = 'http://localhost:5283/api/Employees';
+  private apiUrl = 'http://localhost:5162/api/Employees';
 
   constructor() {}
 

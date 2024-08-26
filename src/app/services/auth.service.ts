@@ -1,62 +1,97 @@
 import { Injectable } from '@angular/core';
-import axios, { AxiosRequestConfig } from 'axios';
-import { Observable, from, of } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { LoginResponse, RegisterResponse } from '../authentication/auth-inteface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
-  private baseUrl = 'http://localhost:5283/api/users';
+  private baseUrl = 'http://localhost:5162/api/users';
 
-  constructor() { }
+  constructor(private http: HttpClient) {}
 
-  private getAuthHeaders(): AxiosRequestConfig {
+  // Get the user's role from the JWT token stored in localStorage
+  // Get the user's role from the JWT token stored in localStorage
+getUserRole(): string {
+  const token = localStorage.getItem('authToken');
+  console.log('Token:', token); // Debug: Log the token
+  if (!token) return '';
+
+  const decodedToken = this.decodeToken(token);
+  console.log('Decoded Token:', decodedToken); // Debug: Log the decoded token
+  return decodedToken?.unique_name || ''; // Extract the role from the token
+}
+
+
+  // Decode JWT token to extract payload information
+  private decodeToken(token: string): any {
+    try {
+      const payload = atob(token.split('.')[1]);
+      const decoded = JSON.parse(payload);
+      console.log('Decoded Payload:', decoded); // Debug: Log the decoded payload
+      return decoded;
+    } catch (e) {
+      console.error('Token decoding error:', e); // Log any errors in decoding
+      return null;
+    }
+  }
+
+  // Create HttpHeaders with Authorization if token exists
+  private getAuthHeaders(): HttpHeaders {
     const token = localStorage.getItem('authToken');
-    return {
-      headers: {
-        'Authorization': token ? `Bearer ${token}` : ''
-      }
-    };
+    return new HttpHeaders({
+      Authorization: token ? `Bearer ${token}` : '',
+    });
   }
 
+  // Register a new user
   register(user: any): Observable<RegisterResponse> {
-    return from(
-      axios.post<RegisterResponse>(`${this.baseUrl}/register`, user)
-        .then(response => response.data)
-        .catch(error => {
-          console.error('Registration error:', error);
+    return this.http
+      .post<RegisterResponse>(`${this.baseUrl}/register`, user)
+      .pipe(
+        tap((response) => console.log('Registration successful:', response)),
+        catchError((error) => {
+          console.error('Registration error:', error.message || error);
           throw error;
         })
-    );
+      );
   }
 
+  // Login a user and store the JWT token in localStorage
   login(user: any): Observable<LoginResponse> {
-    return from(
-      axios.post<LoginResponse>(`${this.baseUrl}/login`, user)
-        .then(response => {
-          if (response.data && response.data.token) {
-            localStorage.setItem('authToken', response.data.token);
+    return this.http
+      .post<LoginResponse>(`${this.baseUrl}/login`, user)
+      .pipe(
+        tap((response) => {
+          if (response.token) {
+            localStorage.setItem('authToken', response.token);
+            console.log('Login successful:', response);
           }
-          return response.data;
-        })
-        .catch(error => {
-          console.error('Login error:', error);
+        }),
+        catchError((error) => {
+          console.error('Login error:', error.message || error);
           throw error;
         })
-    );
+      );
   }
 
+  // Verify if the stored JWT token is valid
   verifyToken(): Observable<boolean> {
-    return from(
-      axios.get<boolean>(`${this.baseUrl}/verify-token`, this.getAuthHeaders())
-        .then(response => response.data)
-        .catch(() => false) // Return false if there's an error
-    );
+    return this.http
+      .get<boolean>(`${this.baseUrl}/verify-token`, { headers: this.getAuthHeaders() })
+      .pipe(
+        catchError((error) => {
+          console.error('Token verification error:', error.message || error);
+          return of(false); // Return false if there's an error
+        })
+      );
   }
 
+  // Logout the user by removing the token from localStorage
   logout(): void {
     localStorage.removeItem('authToken');
+    console.log('User logged out successfully');
   }
 }

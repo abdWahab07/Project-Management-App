@@ -7,6 +7,7 @@ import { TaskService1 } from './tasks/task-create/createTask.services';
 import { BarChartModule } from '@swimlane/ngx-charts';
 import { TaskService } from './services/task.service';
 import { DatePipe } from '@angular/common';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { ProjectService } from './projects/project-create/project-create.service
 import { ProjectService1 } from './services/projects.service1';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AuthInterceptor } from './authentication/auth.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +36,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     NgStyle,
     FontAwesomeModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     BarChartModule,
     NgxChartsModule,
@@ -43,7 +46,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     })
   ],
 
-  providers: [NavbarService, listServices, ProjectService, DatePipe, ProjectService1, TaskService1, NgbModule, TaskService],
+  providers: [NavbarService, listServices, ProjectService, DatePipe, ProjectService1, TaskService1, NgbModule, TaskService,   { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
 
   bootstrap: [AppComponent],
 

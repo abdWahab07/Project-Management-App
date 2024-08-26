@@ -8,7 +8,7 @@ import { Task } from '../DTOs/TaskDto';
   providedIn: 'root'
 })
 export class TaskService {
-  private baseUrl = 'http://localhost:5283/api/tasks';
+  private baseUrl = 'http://localhost:5162/api/tasks';
 
   constructor() {}
 
