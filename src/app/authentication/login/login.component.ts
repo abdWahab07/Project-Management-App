@@ -20,8 +20,8 @@ export class LoginComponent {
     this.authService.login({ username: this.username, password: this.password })
       .subscribe({
         next: () => {
-          // Redirect or display success message
-          window.location.href = '/dashboard'; // Change according to your routing
+          // Redirect to the dashboard
+          window.location.href = 'http://localhost:80/project/dashboard';
         },
         error: () => {
           this.errorMessage = 'Login failed. Please check your credentials.';

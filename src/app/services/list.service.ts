@@ -6,8 +6,9 @@ import { Employee } from '../DTOs/Employee';
 @Injectable({
   providedIn: 'root'
 })
+
 export class listServices {
-  private apiUrl = 'http://localhost:5162/api/Employees';
+  private apiUrl = 'http://localhost/backend/api/employees';
 
   constructor() {}
 

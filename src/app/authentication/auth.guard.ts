@@ -24,12 +24,14 @@ export class AuthGuard implements CanActivate {
           return true;
         } else {
           console.log('Access denied, redirecting to login');
+          window.alert('Access denied. You do not have permission to view this page.');
           this.router.navigate(['/login']);
           return false;
         }
       }),
       catchError(() => {
         console.log('Error in AuthGuard, redirecting to login');
+        window.alert('An error occurred while checking access. Please log in again.');
         this.router.navigate(['/login']);
         return of(false);
       })

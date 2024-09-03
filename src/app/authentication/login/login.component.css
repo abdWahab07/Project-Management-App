@@ -36,6 +36,8 @@
 }
 
 .login-card {
+  border-radius: 0px;
+  border: 10px;
   background-color: #e59a48;
   width: 30rem;
   max-width: 400px;
@@ -78,7 +80,7 @@ button {
 
 /* Adding a slight push effect on hover */
 button:hover {
-  background-color: #ff9e43;
+  background-color:chocolate;
   color: black;
   transform: translateY(-5px); /* Move up slightly on hover */
 }
